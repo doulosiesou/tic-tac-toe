@@ -1,0 +1,115 @@
+* {
+    background-color: rgb(200,200,200);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: rgb(200,200,200);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#header {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgb(200,200,200);
+    font-size: 48px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.bigger-header-text {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+#lower-part {
+    background-color: rgb(255, 255, 212);
+    display: flex;
+    flex-direction: row;
+}
+
+#game-info {
+    width: 27vw;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,255,212);
+    justify-content: space-between;
+}
+
+#game-type {
+    background-color: rgb(255,255,212);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-type-label {
+    background-color: rgb(255,255,212);
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.game-type-select>select {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.player-settings {
+    background-color: rgb(255,255,212);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#player1-name, #player2-name, #num-rounds, #difficulty {
+    background-color: rgb(255,255,212);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#player1-name>label, 
+#player2-name>label,
+#num-rounds>label, 
+#difficulty>label {
+    background-color: rgb(255,255,212);
+    font-size: 18px;
+}
+
+#game-settings-submit {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#gameboard {
+    margin: 20px 20px 20px 70px;
+    justify-content: center;
+    height: 30vw;
+    width: 30vw;
+    background-color: rgb(255, 255, 212);
+    grid-area: 1 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#score-card {
+    padding: 20px;
+    margin: 20px;
+    font-size: 24px;
+    width: 20vw;
+}
